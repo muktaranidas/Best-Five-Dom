@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top 5 Best Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <section class="bg-black py-24">
+        <h1
+          class="text-orange-500 italic font-bold w-2/4 text-6xl text-center mx-auto pb-8"
+        >
+          Top 5 Best Player
+        </h1>
+        <p class="w-6/12 text-center mx-auto text-white">
+          Lionel Messi and Cristiano Ronaldo have ruled the roost for the lion's
+          share of 20 years from the next generation of stars with high hopes of
+          reaching the top.
+        </p>
+      </section>
+    </header>
+
+    <main class="bg-current">
+      <section class="w-11/12 mx-auto pb-40">
+        <div class="grid grid-cols-4 gap-3">
+          <!-- players 1 -->
+          <div class="mt-8">
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="image/Mashrafi.jpg"
+                  class="w-full h-40"
+                  alt="Shoes"
+                  class=""
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title" id="">Mashrafe</h2>
+                <div class="card-actions justify-center">
+                  <button
+                    class="btn btn-primary px-8 button"
+                    onclick="addToCart(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- players 2 -->
+          <div class="mt-8">
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="image/Mustafij.jpg"
+                  class="w-full h-40"
+                  alt="Shoes"
+                  class=""
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Mustafij</h2>
+
+                <div class="card-actions justify-center">
+                  <button
+                    class="btn btn-primary px-8"
+                    onclick="addToCart(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- players 3 -->
+          <div class="mt-8">
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="image/Shakib.jpg"
+                  class="w-full h-40"
+                  alt="Shoes"
+                  class=""
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Shakib</h2>
+
+                <div class="card-actions justify-center">
+                  <button
+                    class="btn btn-primary px-8"
+                    onclick="addToCart(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- players 4 -->
+          <div class="mt-8 bg-black">
+            <div class="text-white">
+              <h1 class="text-center mt-3 font-semibold text-xl">
+                Selected-
+                <span class="text-orange-500" id="total-added-prodect">V</span>
+              </h1>
+
+              <div class="overflow-x-auto my-5 text-black">
+                <table class="table table-zebra w-full bg-black">
+                  <thead></thead>
+                  <tbody class="cart-products tex-white-4" id="player-name">
+                    <!-- <tr>
+                      <th>1</th>
+                      <td>Cy Ganderton</td>
+                      <td>400</td>
+                    </tr> -->
+                  </tbody>
+                </table>
+
+                <!-- <ol>
+                   <li>Coffee</li> -->
+                <!-- </ol> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- players 5 -->
+          <div class="mt-8">
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="image/Tamim.jpg"
+                  class="w-full h-40"
+                  alt="Shoes"
+                  class=""
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Tamim</h2>
+
+                <div class="card-actions justify-center">
+                  <button
+                    class="btn btn-primary px-8"
+                    onclick="addToCart(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- players 6 -->
+          <div class="mt-8">
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="image/Mahmudullah.jpg"
+                  class="w-full h-40"
+                  alt="Shoes"
+                  class=""
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Mahmudullah</h2>
+
+                <div class="card-actions justify-center">
+                  <button
+                    class="btn btn-primary px-8"
+                    onclick="addToCart(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- players 7 -->
+          <div class="mt-8">
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+              <figure>
+                <img
+                  src="image/Mushfiqur Rahim.jpg"
+                  class="w-full h-40"
+                  alt="Shoes"
+                  class=""
+                />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title">Mushfiqur</h2>
+
+                <div class="card-actions justify-center">
+                  <button
+                    class="btn btn-primary px-8"
+                    onclick="addToCart(this)"
+                  >
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- players 8 -->
+          <div class="mt-8 bg-black text-white">
+            <div>
+              <h1 class="text-center text-xl font-semibold py-3">Budget</h1>
+
+              <div class="px-2 w-full mt-2">
+                <h2 class="inline pr-2 text-sm text-stone-400">Per Player</h2>
+                <input
+                  id="per-player-field"
+                  type="text"
+                  value="1000"
+                  class="w-6/12 bg-black border-2 border-white-600 py-1 px-2"
+                />
+              </div>
+
+              <button
+                id="btn-calculate"
+                class="bg-primary w-10/12 mt-5 py-1 mx-3 font-semibold"
+              >
+                Calculate
+              </button>
+
+              <div class="my-3 w-full px-2">
+                <h2 class="inline text-sm text-stone-400">Player Expenses</h2>
+                <h2 class="inline pl-3">
+                  $<span id="player-expenses-text"></span>
+                </h2>
+              </div>
+
+              <div class="px-2 w-full mb-3 mx-auto">
+                <h2 class="inline pr-2 text-stone-400">Manager</h2>
+                <input
+                  id="manager-field"
+                  type="text"
+                  value="2000"
+                  class="w-6/12 bg-black border-2 border-white-600 py-1 px-2"
+                />
+              </div>
+              <div class="px-2 w-full">
+                <h2 class="inline pr-2 text-stone-400">Coach</h2>
+                <input
+                  id="coach-field"
+                  type="text"
+                  value="4000"
+                  class="w-6/12 bg-black border-2 border-white-600 py-1 px-2 ml-5"
+                />
+              </div>
+
+              <button
+                id="calculate-total"
+                class="bg-primary w-10/12 mt-5 font-semibold py-1 mx-3"
+              >
+                Calculate Total
+              </button>
+
+              <div class="mt-3 mb-6">
+                <h2 class="pl-3 text-stone-400 inline">Total</h2>
+                <h3 class="text-orange-400 inline mx-12">
+                  $<span id="total-text">00</span>
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/common.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
